@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	    <title>All About Traditional Chinese Painting</title>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../static/css/main.css">
+	</head>
+	<body>
+		<div id="origin">
+			<div>
+				<h3>Input Image</h3>
+			</div>
+
+			<div id="input_img">
+				<img src="{{ picture.photo.url }}"  alt="testImg"  id="testI" />
+			</div>
+			<div id="original_art">
+				<h5>Name: {{ picture.photo.name }}</h5>
+			</div>
+		</div>
+
+		<div id="result">
+			<div>
+				<h3>Output Result</h3>
+			</div>
+			<div id="result1">
+				<div id="result1_img">
+					<img src="../static/images/{{ dict.0.0 }}"  alt="resultImg1" id="resultI1" />
+				</div>
+				<div id="result1_art">
+					<h5>Name: {{ dict.0.0 }}</h5>
+				</div>
+				<div id="result1_per">
+					<h5>Accuracy: {{ dict.0.1 }}</h5>
+				</div>
+			</div>
+			<div id="reuslt2">
+				<div id="result2_img">
+					<img src="../static/images/{{ dict.1.0 }}"  alt="resultImg2" id="resultI2" />
+				</div>
+				<div id="result2_art">
+					<h5>Name: {{ dict.1.0 }}</h5>
+				</div>
+				<div id="result2_per">
+					<h5>Accuracy: {{ dict.1.1 }}</h5>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
