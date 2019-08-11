@@ -1,2 +1,2 @@
 # ELG5378_IP_Project
-### IMAGE-PROCESSING-BASED-ON-DEEP-LEARNING
+### Image Processing and Image Communication
